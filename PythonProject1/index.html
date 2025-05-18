@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Команда профессионалов</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Золотые полосы -->
+  <div class="gold-bg">
+    <div class="gold-border left"><div class="gold-overlay"></div></div>
+    <div class="gold-border right"><div class="gold-overlay"></div></div>
+  </div>
+
+  <!-- Фоновые слои -->
+  <div class="background-wrapper">
+    <div class="background-layer active" id="bg-layer-1"></div>
+    <div class="background-layer" id="bg-layer-2"></div>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="container">
+    <div id="logo-container" class="logo-container">
+      <div class="logo-glow"></div>
+      <img id="logo" src="" alt="Логотип" class="logo">
+    </div>
+
+    <h1>Выберите категорию</h1>
+
+    <div class="buttons">
+      <div class="main-button">
+        <button onclick="UI.showContent('decadenza')" class="decadenza">Decadenza</button>
+      </div>
+      <div class="secondary-buttons">
+        <button onclick="UI.showContent('obscura')" class="obscura">Obscura</button>
+        <button onclick="UI.showContent('eclipse')" class="eclipse">Eclipse</button>
+        <button onclick="UI.showContent('ophidian')" class="ophidian">Ophidian</button>
+      </div>
+    </div>
+
+    <div id="list-container" class="list-container"></div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* Основные стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+}
+
+/* Контейнеры */
+.container {
+  text-align: center;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  max-width: 820px;
+  width: 92%;
+  margin: 2.5rem auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Фоновые элементы */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.background-layer.active {
+  opacity: 1;
+}
+
+/* Заголовки */
+h1 {
+  margin-bottom: 1.8rem;
+  font-size: 2.2rem;
+  color: #f0f0f0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
